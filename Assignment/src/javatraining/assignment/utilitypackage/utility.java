@@ -5,7 +5,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import javatraining.assignment.inputpackage.InputAcceptor;
+import javatraining.assignment.inputpackage.UserInputAccept;
 import javatraining.assignment.itemtypepackage.Item;
 import javatraining.assignment.resultpackage.Result;
 
@@ -20,7 +20,7 @@ public class utility {
 
 		do
 		{
-			i = InputAcceptor.enterInput() ;
+			i = UserInputAccept.enterInput() ;
 			i.calc_stl();
 			
 			

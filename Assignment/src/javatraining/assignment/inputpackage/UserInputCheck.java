@@ -1,6 +1,6 @@
 package javatraining.assignment.inputpackage;
 import javatraining.assignment.itemtypepackage.Constants;
-public class InputValidator {
+public class UserInputCheck {
 
 	public static boolean checkDouble(String str) {
 		try {

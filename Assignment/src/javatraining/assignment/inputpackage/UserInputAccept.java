@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 import javatraining.assignment.itemtypepackage.*;
 
-public class InputAcceptor  {
+public class UserInputAccept  {
 
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in)) ;
 	public static Item enterInput() throws IOException
@@ -27,21 +27,21 @@ public class InputAcceptor  {
 		System.out.print("Enter the Item price : ");
 		do{
 			str = br.readLine();
-			valid  = InputValidator.checkDouble(str);
+			valid  = UserInputCheck.checkDouble(str);
 		} while(!valid) ;
 		price =  Double.parseDouble(str) ;
 
 		System.out.print("Enter the Item type : ");
 		do{
 			str = br.readLine();
-			valid  = InputValidator.checkItemType(str);
+			valid  = UserInputCheck.checkItemType(str);
 		}while(!valid) ;
 		type = str.toLowerCase() ;
 
 		System.out.print("Enter the Item Qty : ");
 		do{
 			str = br.readLine();
-			valid  = InputValidator.checkInt(str);
+			valid  = UserInputCheck.checkInt(str);
 		}while(!valid) ;
 		qty = Integer.parseInt(str);
 		
